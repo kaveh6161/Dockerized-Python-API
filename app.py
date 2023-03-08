@@ -50,7 +50,6 @@ def update_user(user_id: int, name: str, email: str):
     # Return the updated user data as a JSON response
     return user_data
 
-
 @app.patch("/users/{user_id}")
 def patch_user(user_id: int, name: str = None, email: str = None):
     # Define sample user data
